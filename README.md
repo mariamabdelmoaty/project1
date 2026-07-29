@@ -98,7 +98,7 @@ This document outlines the software architecture, module layering, and timing ex
 
 
 ## 📷 Hardware & Simulation
-![Project Simulation](./Hardware1.jpg)
+![Simulation](Hardware1.jpg)
 
 
 
