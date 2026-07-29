@@ -96,3 +96,6 @@ This document outlines the software architecture, module layering, and timing ex
   * **EXTI:** Captures critical fault events instantaneously on falling edges (INT0).
 ---
 
+
+## 📷 Hardware & Simulation
+![Project Simulation](Screenshot 2026-07-29 172832.png)
