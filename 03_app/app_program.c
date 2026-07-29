@@ -27,19 +27,15 @@ void APP_vInit(void)
 
 void APP_vUpdateSystem(void)
 {
-    /* Read Voltage & Current from Solar Panel (ADC Channels 0 & 1) */
-    u16 Local_u16SolarVolt = ADC_u16ReadChannel(ADC_CHANNEL_0);
-    u16 Local_u16SolarCurr = ADC_u16ReadChannel(ADC_CHANNEL_1);
+    /* Read Voltage from R1 connected to ADC Channel 0 */
+    u16 Local_u16R1Val = ADC_u16ReadChannel(ADC_CHANNEL_0);
+    
+    /* Convert ADC value directly to percentage based on R1 movement */
+    u8 r1_percentage = (u8)((Local_u16R1Val * 100UL) / 1023UL);
 
-    /* Check Over-Voltage Protection (Example Threshold) */
-    if(Local_u16SolarVolt > 800)
-    {
-        BUZZER_vTurnOn(&AlarmBuzzer);
-        LCD_vSetCursor(1, 0);
-        LCD_vSendString((u8*)"OVER VOLTAGE!   ");
-    }
-    else
-    {
-        BUZZER_vTurnOff(&AlarmBuzzer);
-    }
+    /* Display result on LCD second line */
+    u8 buffer[16];
+    LCD_vSetCursor(1, 0);
+    sprintf(buffer, "R1: %d%%      ", r1_percentage);
+    LCD_vSendString(buffer);
 }
