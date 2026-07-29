@@ -98,4 +98,4 @@ This document outlines the software architecture, module layering, and timing ex
 
 
 ## 📷 Hardware & Simulation
-![Project Simulation](Screenshot 2026-07-29 172832.png)
+![Project Simulation](hardware.jpd)
