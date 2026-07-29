@@ -98,7 +98,7 @@ This document outlines the software architecture, module layering, and timing ex
 
 
 ## 📷 Hardware & Simulation
-![Simulation](moody.jpeg)
+![Simulation](photo.jpg)
 
 
 
