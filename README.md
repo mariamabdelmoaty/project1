@@ -2,9 +2,10 @@
 A professional embedded systems project designed to implement a robust, multi-layered Solar Charge Controller and Energy Management System utilizing an ATmega32 microcontroller.
 ---
 ## 👥 Prepared By
-* Maryam Ahmed Mohammed
-* Tasneem Mohammed Nashat
-* Hajar Jumaa Ali
+* **Maryam Ahmed Mohammed** - Project Source Code (VS), MCAL Layer, Proteus Hardware Simulation & Integration
+* **Hajar Jumaa Ali** - HAL Layer & Lib / Shared Utilities
+* **Tasneem Mohammed Nashat** - Application Layer & Execution Schedule (Task Scheduler)
+*
 ---
 ## 🏗️ System Architecture & Modules Overview
 This document outlines the software architecture, module layering, and timing execution strategy for PRJ-11-SOLAR.
